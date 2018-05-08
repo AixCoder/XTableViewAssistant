@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XTableViewAssistant/XTableViewAssistant/XTableViewAssistant.m"
+            timestampString = "547481293.835119"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[XTableViewAssistant tableView:cellForRowAtIndexPath:]"
+                  moduleName = "XTableViewAssistant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///iOS/WorkSpace/XTableViewAssistant/XTableViewAssistant/XTableViewAssistant/XTableViewAssistant.m"
+                  timestampString = "547481293.876799"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "783">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[XTableViewAssistant tableView:cellForRowAtIndexPath:]"
+                  moduleName = "XTableViewAssistant"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///iOS/WorkSpace/XTableViewAssistant/XTableViewAssistant/XTableViewAssistant/XTableViewAssistant.m"
+                  timestampString = "547481293.87878"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "823">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
