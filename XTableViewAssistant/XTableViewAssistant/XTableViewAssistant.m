@@ -46,9 +46,7 @@
         if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
             _tableView.rowHeight = UITableViewAutomaticDimension;
             _tableView.estimatedRowHeight = 44.;
-            
         }
-        
         
     }
     return self;
@@ -59,7 +57,8 @@
     Class row_class = NSClassFromString(rowClass);
     Class cell_class = NSClassFromString(cellClass);
     NSAssert([row_class isSubclassOfClass:[XTableViewRow class]], @"row class error");
-    NSAssert([cell_class isSubclassOfClass:[UITableViewCell class]], @"cell class error");
+    NSAssert([cell_class isSubclassOfClass:[XTableViewCell class]], @"cell class error");
+    
     self.registedCellClass[rowClass] = cell_class;
     
     NSBundle *bundle = [NSBundle mainBundle];
@@ -93,28 +92,52 @@
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.tableSections.count;
+    if (section < self.tableSections.count) {
+        XTableViewSection *tableSection = self.tableSections[section];
+        return  tableSection.rows.count;
+    }
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    
     XTableViewSection *section = self.tableSections[indexPath.section];
     XTableViewRow *row = section.rows[indexPath.row];
     
     Class cellClass = [self cellClassForRow:row];
-    NSString *cellIdentifier;
+    NSString *cellIdentifier = @"XTableViewCell";
     if (self.registedXibs[NSStringFromClass(row.class)]) {
         cellIdentifier= self.registedXibs[NSStringFromClass(row.class)];
     }else if (row.cellIdentifier){
         cellIdentifier = row.cellIdentifier;
+    }else{
+        NSLog(@"没有设定cell重用标识符 ");
     }
-    NSAssert(cellIdentifier, @"");
-    NSLog(@"cell id %@",cellIdentifier);
-    
+
     XTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    cell.rowDescription = row;
+    if (cell) {
+        NSAssert([cell isKindOfClass:[XTableViewCell class]], @"cell 必须是XtableViewCell的子类");
+    }
+    
+    void (^configurationCell)(XTableViewCell *cell) = ^(XTableViewCell *cell) {
+        
+        cell.tableViewAssistant = self;
+        cell.rowDescription = row;
+        cell.parentTableView = _tableView;
+        
+        [cell cellDidLoad];
+    };
+    
+    if (cell == nil) {
+        cell = [[cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        configurationCell(cell);
+    }
+    if (cell && !cell.isLoaded) {
+        configurationCell(cell);
+    }
+    
     [cell cellWillAppear];
+    
     return cell;
     
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F66BA57820A2C6210085296D /* XiaMiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BA57720A2C6210085296D /* XiaMiViewController.m */; };
+		F66BA57C20A2C7F20085296D /* ChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BA57A20A2C7F20085296D /* ChannelCell.m */; };
+		F66BA57D20A2C7F20085296D /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66BA57B20A2C7F20085296D /* ChannelCell.xib */; };
+		F66BA58020A2CF3C0085296D /* ChannelRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BA57F20A2CF3C0085296D /* ChannelRow.m */; };
 		F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8374920A18D7400123B07 /* AppDelegate.m */; };
 		F6C8374D20A18D7400123B07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8374C20A18D7400123B07 /* ViewController.m */; };
 		F6C8375020A18D7400123B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C8374E20A18D7400123B07 /* Main.storyboard */; };
@@ -20,9 +24,19 @@
 		F6C8377920A1C26800123B07 /* XTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8377720A1C26800123B07 /* XTimeLineCell.m */; };
 		F6C8377A20A1C26800123B07 /* XTimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C8377820A1C26800123B07 /* XTimeLineCell.xib */; };
 		F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8377D20A1C31700123B07 /* XTimeLineRow.m */; };
+		F6E96AD320A5689A001E6E18 /* SongListRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96AD220A5689A001E6E18 /* SongListRow.m */; };
+		F6E96AD720A568B6001E6E18 /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96AD520A568B6001E6E18 /* SongListCell.m */; };
+		F6E96AD820A568B6001E6E18 /* SongListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E96AD620A568B6001E6E18 /* SongListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F66BA57620A2C6210085296D /* XiaMiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaMiViewController.h; sourceTree = "<group>"; };
+		F66BA57720A2C6210085296D /* XiaMiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaMiViewController.m; sourceTree = "<group>"; };
+		F66BA57920A2C7F20085296D /* ChannelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelCell.h; sourceTree = "<group>"; };
+		F66BA57A20A2C7F20085296D /* ChannelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelCell.m; sourceTree = "<group>"; };
+		F66BA57B20A2C7F20085296D /* ChannelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCell.xib; sourceTree = "<group>"; };
+		F66BA57E20A2CF3C0085296D /* ChannelRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelRow.h; sourceTree = "<group>"; };
+		F66BA57F20A2CF3C0085296D /* ChannelRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelRow.m; sourceTree = "<group>"; };
 		F6C8374520A18D7400123B07 /* XTableViewAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTableViewAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C8374820A18D7400123B07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6C8374920A18D7400123B07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,6 +60,11 @@
 		F6C8377820A1C26800123B07 /* XTimeLineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XTimeLineCell.xib; sourceTree = "<group>"; };
 		F6C8377C20A1C31700123B07 /* XTimeLineRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTimeLineRow.h; sourceTree = "<group>"; };
 		F6C8377D20A1C31700123B07 /* XTimeLineRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTimeLineRow.m; sourceTree = "<group>"; };
+		F6E96AD120A5689A001E6E18 /* SongListRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListRow.h; sourceTree = "<group>"; };
+		F6E96AD220A5689A001E6E18 /* SongListRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListRow.m; sourceTree = "<group>"; };
+		F6E96AD420A568B6001E6E18 /* SongListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListCell.h; sourceTree = "<group>"; };
+		F6E96AD520A568B6001E6E18 /* SongListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListCell.m; sourceTree = "<group>"; };
+		F6E96AD620A568B6001E6E18 /* SongListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +78,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F66BA57220A2C5E40085296D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F66BA57320A2C5E40085296D /* Rows */,
+				F66BA57420A2C5E40085296D /* ViewControllers */,
+				F66BA57520A2C5E40085296D /* Views */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F66BA57320A2C5E40085296D /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				F66BA57E20A2CF3C0085296D /* ChannelRow.h */,
+				F66BA57F20A2CF3C0085296D /* ChannelRow.m */,
+				F6E96AD120A5689A001E6E18 /* SongListRow.h */,
+				F6E96AD220A5689A001E6E18 /* SongListRow.m */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		F66BA57420A2C5E40085296D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F66BA57620A2C6210085296D /* XiaMiViewController.h */,
+				F66BA57720A2C6210085296D /* XiaMiViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F66BA57520A2C5E40085296D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F66BA57920A2C7F20085296D /* ChannelCell.h */,
+				F66BA57A20A2C7F20085296D /* ChannelCell.m */,
+				F66BA57B20A2C7F20085296D /* ChannelCell.xib */,
+				F6E96AD420A568B6001E6E18 /* SongListCell.h */,
+				F6E96AD520A568B6001E6E18 /* SongListCell.m */,
+				F6E96AD620A568B6001E6E18 /* SongListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F6C8373C20A18D7400123B07 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +145,7 @@
 				F6C8374920A18D7400123B07 /* AppDelegate.m */,
 				F6C8374B20A18D7400123B07 /* ViewController.h */,
 				F6C8374C20A18D7400123B07 /* ViewController.m */,
+				F66BA57220A2C5E40085296D /* Demo */,
 				F6C8374E20A18D7400123B07 /* Main.storyboard */,
 				F6C8375120A18D7400123B07 /* Assets.xcassets */,
 				F6C8375320A18D7400123B07 /* LaunchScreen.storyboard */,
@@ -186,10 +249,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E96AD820A568B6001E6E18 /* SongListCell.xib in Resources */,
 				F6C8375520A18D7400123B07 /* LaunchScreen.storyboard in Resources */,
 				F6C8377A20A1C26800123B07 /* XTimeLineCell.xib in Resources */,
 				F6C8375220A18D7400123B07 /* Assets.xcassets in Resources */,
 				F6C8375020A18D7400123B07 /* Main.storyboard in Resources */,
+				F66BA57D20A2C7F20085296D /* ChannelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,13 +266,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6C8377520A1924F00123B07 /* XTableViewCell.m in Sources */,
+				F6E96AD320A5689A001E6E18 /* SongListRow.m in Sources */,
+				F66BA57820A2C6210085296D /* XiaMiViewController.m in Sources */,
 				F6C8377920A1C26800123B07 /* XTimeLineCell.m in Sources */,
 				F6C8374D20A18D7400123B07 /* ViewController.m in Sources */,
+				F66BA58020A2CF3C0085296D /* ChannelRow.m in Sources */,
+				F66BA57C20A2C7F20085296D /* ChannelCell.m in Sources */,
 				F6C8376720A191D000123B07 /* XTableViewRow.m in Sources */,
 				F6C8376120A18EF800123B07 /* XTableViewAssistant.m in Sources */,
 				F6C8375820A18D7400123B07 /* main.m in Sources */,
 				F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */,
 				F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */,
+				F6E96AD720A568B6001E6E18 /* SongListCell.m in Sources */,
 				F6C8376420A191BF00123B07 /* XTableViewSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
