@@ -11,7 +11,14 @@
 @class XTableViewRow;
 @class XTableViewAssistant;
 
-@interface XTableViewCell : UITableViewCell
+@protocol XTableViewCellProtocol
+
+- (BOOL)xTableViewCellBecomeFirstResponder;
+- (void)xTableViewCellDidSelectedFromViewController:(UIViewController *)controller;
+
+@end
+
+@interface XTableViewCell : UITableViewCell<XTableViewCellProtocol>
 
 @property (nonatomic,weak)XTableViewRow *rowDescription;
 @property (nonatomic,weak)XTableViewAssistant *tableViewAssistant;

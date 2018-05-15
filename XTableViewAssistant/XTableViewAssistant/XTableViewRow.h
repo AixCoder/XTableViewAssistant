@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "XTableAction.h"
 
 @interface XTableViewRow : NSObject
+
+@property (nonatomic,strong)XTableAction *action;
 
 @property (nonatomic,copy)NSString *cellIdentifier;
 
 @property (nonatomic,strong) id value;
+
+- (UIStoryboard *)uiStoryBoard;
 
 @end

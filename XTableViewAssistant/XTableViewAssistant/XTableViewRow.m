@@ -10,4 +10,9 @@
 
 @implementation XTableViewRow
 
+- (UIStoryboard *)uiStoryBoard
+{
+    return nil;
+}
+
 @end

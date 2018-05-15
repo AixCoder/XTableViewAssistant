@@ -39,7 +39,7 @@
 
 - (void)loadTableView
 {
-    _tableViewAssistant = [[XTableViewAssistant alloc] initWithTableView:self.tableView];
+    _tableViewAssistant = [[XTableViewAssistant alloc] initWithTableView:self.tableView fromUIViewController:self];
     [_tableViewAssistant registerRowClass:NSStringFromClass([ChannelRow class]) forCellClass:NSStringFromClass([ChannelCell class])];
     [_tableViewAssistant registerRowClass:NSStringFromClass([SongListRow class]) forCellClass:NSStringFromClass([SongListCell class])];
     

@@ -7,6 +7,8 @@
 //
 
 #import "XTableViewCell.h"
+#import "XTableViewRow.h"
+#import "XTableAction.h"
 
 @interface XTableViewCell()
 
@@ -39,6 +41,29 @@
 
 - (void)cellWillAppear
 {
+    
+}
+
+#pragma mark XTableViewCellProtocol
+
+- (BOOL)xTableViewCellBecomeFirstResponder
+{
+    return [self becomeFirstResponder];
+}
+
+- (void)xTableViewCellDidSelectedFromViewController:(UIViewController *)controller
+{
+    //页面跳转处理
+      XTableAction *action = self.rowDescription.action;
+    if (action.storyBoardID && self.rowDescription.uiStoryBoard) {
+        UIStoryboard *storyBoard = [self.rowDescription uiStoryBoard];
+        UIViewController *nextController = [storyBoard instantiateViewControllerWithIdentifier:action.storyBoardID];
+        if (controller.navigationController) {
+            [controller.navigationController pushViewController:nextController animated:YES];
+        }else{
+            [controller presentViewController:nextController animated:YES completion:NULL];
+        }
+    }
     
 }
 

@@ -27,6 +27,7 @@
 		F6E96AD320A5689A001E6E18 /* SongListRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96AD220A5689A001E6E18 /* SongListRow.m */; };
 		F6E96AD720A568B6001E6E18 /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96AD520A568B6001E6E18 /* SongListCell.m */; };
 		F6E96AD820A568B6001E6E18 /* SongListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E96AD620A568B6001E6E18 /* SongListCell.xib */; };
+		F6F486B620AAF7C000381FC5 /* XTableAction.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F486B520AAF7C000381FC5 /* XTableAction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		F6E96AD420A568B6001E6E18 /* SongListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListCell.h; sourceTree = "<group>"; };
 		F6E96AD520A568B6001E6E18 /* SongListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListCell.m; sourceTree = "<group>"; };
 		F6E96AD620A568B6001E6E18 /* SongListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongListCell.xib; sourceTree = "<group>"; };
+		F6F486B420AAF7C000381FC5 /* XTableAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTableAction.h; sourceTree = "<group>"; };
+		F6F486B520AAF7C000381FC5 /* XTableAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTableAction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				F6C8376320A191BF00123B07 /* XTableViewSection.m */,
 				F6C8376520A191D000123B07 /* XTableViewRow.h */,
 				F6C8376620A191D000123B07 /* XTableViewRow.m */,
+				F6F486B420AAF7C000381FC5 /* XTableAction.h */,
+				F6F486B520AAF7C000381FC5 /* XTableAction.m */,
 				F6C8377B20A1C2F900123B07 /* Rows */,
 				F6C8376820A191EF00123B07 /* Cells */,
 			);
@@ -277,6 +282,7 @@
 				F6C8375820A18D7400123B07 /* main.m in Sources */,
 				F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */,
 				F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */,
+				F6F486B620AAF7C000381FC5 /* XTableAction.m in Sources */,
 				F6E96AD720A568B6001E6E18 /* SongListCell.m in Sources */,
 				F6C8376420A191BF00123B07 /* XTableViewSection.m in Sources */,
 			);

@@ -32,7 +32,7 @@
     return nil;
 }
 
-- (instancetype)initWithTableView:(UITableView *)table_view
+- (instancetype)initWithTableView:(UITableView *)table_view fromUIViewController:(UIViewController *)viewController
 {
     if (self = [super init]) {
         _tableSections = [NSMutableArray array];
@@ -40,6 +40,8 @@
         _registedCellClass = [NSMutableDictionary dictionary];
         
         NSAssert(table_view, @"table view is nill");
+        NSAssert(viewController, @"view controller is nil");
+        _viewController = viewController;
         table_view.delegate = self;
         table_view.dataSource = self;
         _tableView = table_view;
@@ -160,6 +162,14 @@
     }
     
     return 44.;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XTableViewCell<XTableViewCellProtocol> *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    [cell xTableViewCellDidSelectedFromViewController:self.viewController];
+    
 }
 
 @end

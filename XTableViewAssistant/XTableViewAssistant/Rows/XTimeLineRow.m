@@ -10,4 +10,9 @@
 
 @implementation XTimeLineRow
 
+- (UIStoryboard *)uiStoryBoard
+{
+    return [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+}
+
 @end

@@ -24,12 +24,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _tableViewAssistant = [[XTableViewAssistant alloc] initWithTableView:_tableview];
+    _tableViewAssistant = [[XTableViewAssistant alloc] initWithTableView:_tableview fromUIViewController:self];
     [_tableViewAssistant registerRowClass:NSStringFromClass([XTimeLineRow class]) forCellClass:NSStringFromClass([XTimeLineCell class])];
     
     _section = [XTableViewSection section];
     _row = [[XTimeLineRow alloc] init];
     _row.value = @"i am  super hero \n \n";
+    
+    XTableAction *action = [[XTableAction alloc] init];
+    action.storyBoardID = @"xiami";
+    _row.action = action;
     
     [_section addRow:_row];
     [_tableViewAssistant addSection:_section];
