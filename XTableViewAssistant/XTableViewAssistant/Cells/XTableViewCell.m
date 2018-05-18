@@ -41,7 +41,9 @@
 
 - (void)cellWillAppear
 {
-    
+
+    XTableViewRow *row = self.rowDescription;
+    self.textLabel.text = row.value;
 }
 
 #pragma mark XTableViewCellProtocol

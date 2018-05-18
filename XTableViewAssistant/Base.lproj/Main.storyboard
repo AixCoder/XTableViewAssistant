@@ -39,6 +39,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="P14-EH-aKu">
+            <objects>
+                <viewController storyboardIdentifier="Setting" id="vfU-t3-7aR" customClass="SettingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hGH-WD-Suj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rmv-wr-YQP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rGR-Xp-I1n" firstAttribute="trailing" secondItem="Rmv-wr-YQP" secondAttribute="trailing" id="br4-of-U6z"/>
+                            <constraint firstItem="Rmv-wr-YQP" firstAttribute="leading" secondItem="rGR-Xp-I1n" secondAttribute="leading" id="gbC-oj-BvW"/>
+                            <constraint firstItem="rGR-Xp-I1n" firstAttribute="bottom" secondItem="Rmv-wr-YQP" secondAttribute="bottom" id="lOI-cH-NKx"/>
+                            <constraint firstItem="Rmv-wr-YQP" firstAttribute="top" secondItem="rGR-Xp-I1n" secondAttribute="top" id="njl-fa-GTC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rGR-Xp-I1n"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Rmv-wr-YQP" id="JF3-lf-8jo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T74-2y-lL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="753"/>
+        </scene>
         <!--Xia Mi View Controller-->
         <scene sceneID="sE8-M2-EOI">
             <objects>

@@ -13,10 +13,13 @@
 @interface XTableViewRow : NSObject
 
 @property (nonatomic,strong)XTableAction *action;
+@property (nonatomic,copy) void (^selectedHandler)(id tableViewRow);
 
 @property (nonatomic,copy)NSString *cellIdentifier;
 
 @property (nonatomic,strong) id value;
+
+
 
 - (UIStoryboard *)uiStoryBoard;
 

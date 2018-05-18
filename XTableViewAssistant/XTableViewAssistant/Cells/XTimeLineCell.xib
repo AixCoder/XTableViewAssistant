@@ -18,25 +18,8 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKY-mS-Wwr">
-                        <rect key="frame" x="16" y="11" width="288" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                </subviews>
-                <constraints>
-                    <constraint firstAttribute="trailing" secondItem="jKY-mS-Wwr" secondAttribute="trailing" constant="16" id="7lX-Ar-h96"/>
-                    <constraint firstItem="jKY-mS-Wwr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Ucg-sK-ep7"/>
-                    <constraint firstItem="jKY-mS-Wwr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="aH0-fT-kgC"/>
-                    <constraint firstAttribute="bottom" secondItem="jKY-mS-Wwr" secondAttribute="bottom" constant="11.5" id="dqP-wY-AgC"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
-            <connections>
-                <outlet property="titleLabel" destination="jKY-mS-Wwr" id="0f8-i0-uTA"/>
-            </connections>
         </tableViewCell>
     </objects>
 </document>

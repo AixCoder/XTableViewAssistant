@@ -10,6 +10,7 @@
 #import "XTableViewAssistant.h"
 #import "XTimeLineRow.h"
 #import "XTimeLineCell.h"
+#import "TestListViewController.h"
 
 @interface ViewController ()
 
@@ -29,16 +30,30 @@
     
     _section = [XTableViewSection section];
     _row = [[XTimeLineRow alloc] init];
-    _row.value = @"i am  super hero \n \n";
+    _row.value = @"仿虾米首页";
+    _row.action.storyBoardID = @"xiami";
     
-    XTableAction *action = [[XTableAction alloc] init];
-    action.storyBoardID = @"xiami";
-    _row.action = action;
+    XTableViewRow *row1 = [[XTableViewRow alloc] init];
+    row1.selectedHandler = ^(id tableViewRow) {
+        UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *settingVC = [board instantiateViewControllerWithIdentifier:@"Setting"];
+        [self.navigationController pushViewController:settingVC animated:YES];
+    };
+    row1.value = @"设置页面";
     
+    XTableViewRow *row2 = [[XTableViewRow alloc] init];
+    row2.selectedHandler = ^(id tableViewRow) {
+        
+        TestListViewController *vc = [[TestListViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    };
+    row2.value = @"自定义cell";
+    
+    [_section addRow:row1];
     [_section addRow:_row];
+    [_section addRow:row2];
     [_tableViewAssistant addSection:_section];
-    
-//    [self.tableview reloadData];
+
     
 }
 

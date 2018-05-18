@@ -45,6 +45,7 @@
         table_view.delegate = self;
         table_view.dataSource = self;
         _tableView = table_view;
+        [self registerDefaultCells];
         if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
             _tableView.rowHeight = UITableViewAutomaticDimension;
             _tableView.estimatedRowHeight = 44.;
@@ -52,6 +53,11 @@
         
     }
     return self;
+}
+
+- (void)registerDefaultCells
+{
+    [self registerRowClass:NSStringFromClass([XTableViewRow class]) forCellClass:NSStringFromClass([XTableViewCell class])];
 }
 
 - (void)registerRowClass:(NSString *)rowClass forCellClass:(NSString*)cellClass
@@ -166,9 +172,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    XTableViewCell<XTableViewCellProtocol> *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    [cell xTableViewCellDidSelectedFromViewController:self.viewController];
+    XTableViewSection *section = self.sections[indexPath.section];
+    XTableViewRow *row = section.rows[indexPath.row];
+    
+    if (row.selectedHandler) {
+        row.selectedHandler(row);
+    }else{
+        
+        XTableViewCell<XTableViewCellProtocol> *cell = [tableView cellForRowAtIndexPath:indexPath];
+        
+        [cell xTableViewCellDidSelectedFromViewController:self.viewController];
+    }
     
 }
 

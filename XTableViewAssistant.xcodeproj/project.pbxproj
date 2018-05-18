@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61EE65E20AEF65C0029A8F4 /* TestListRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F61EE65D20AEF65C0029A8F4 /* TestListRow.m */; };
+		F61EE66220AEF67A0029A8F4 /* TestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61EE66020AEF67A0029A8F4 /* TestListViewController.m */; };
+		F61EE66320AEF67A0029A8F4 /* TestListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61EE66120AEF67A0029A8F4 /* TestListViewController.xib */; };
+		F61EE66620AEF6B30029A8F4 /* TestListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F61EE66520AEF6B30029A8F4 /* TestListCell.m */; };
+		F61EE66820AEF6C20029A8F4 /* TestListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61EE66720AEF6C20029A8F4 /* TestListCell.xib */; };
+		F64360E220AC4E0200A42319 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64360E120AC4E0200A42319 /* SettingViewController.m */; };
+		F64360E520AC539B00A42319 /* TextFieldRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F64360E420AC539B00A42319 /* TextFieldRow.m */; };
+		F64360E920AC53B800A42319 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F64360E720AC53B800A42319 /* TextFieldCell.m */; };
+		F64360EA20AC53B800A42319 /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64360E820AC53B800A42319 /* TextFieldCell.xib */; };
 		F66BA57820A2C6210085296D /* XiaMiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BA57720A2C6210085296D /* XiaMiViewController.m */; };
 		F66BA57C20A2C7F20085296D /* ChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BA57A20A2C7F20085296D /* ChannelCell.m */; };
 		F66BA57D20A2C7F20085296D /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66BA57B20A2C7F20085296D /* ChannelCell.xib */; };
@@ -31,6 +40,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61EE65C20AEF65C0029A8F4 /* TestListRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListRow.h; sourceTree = "<group>"; };
+		F61EE65D20AEF65C0029A8F4 /* TestListRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListRow.m; sourceTree = "<group>"; };
+		F61EE65F20AEF67A0029A8F4 /* TestListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListViewController.h; sourceTree = "<group>"; };
+		F61EE66020AEF67A0029A8F4 /* TestListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListViewController.m; sourceTree = "<group>"; };
+		F61EE66120AEF67A0029A8F4 /* TestListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestListViewController.xib; sourceTree = "<group>"; };
+		F61EE66420AEF6B30029A8F4 /* TestListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListCell.h; sourceTree = "<group>"; };
+		F61EE66520AEF6B30029A8F4 /* TestListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListCell.m; sourceTree = "<group>"; };
+		F61EE66720AEF6C20029A8F4 /* TestListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestListCell.xib; sourceTree = "<group>"; };
+		F64360E020AC4E0200A42319 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		F64360E120AC4E0200A42319 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		F64360E320AC539B00A42319 /* TextFieldRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldRow.h; sourceTree = "<group>"; };
+		F64360E420AC539B00A42319 /* TextFieldRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldRow.m; sourceTree = "<group>"; };
+		F64360E620AC53B800A42319 /* TextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
+		F64360E720AC53B800A42319 /* TextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
+		F64360E820AC53B800A42319 /* TextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
 		F66BA57620A2C6210085296D /* XiaMiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaMiViewController.h; sourceTree = "<group>"; };
 		F66BA57720A2C6210085296D /* XiaMiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaMiViewController.m; sourceTree = "<group>"; };
 		F66BA57920A2C7F20085296D /* ChannelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelCell.h; sourceTree = "<group>"; };
@@ -98,6 +122,10 @@
 				F66BA57F20A2CF3C0085296D /* ChannelRow.m */,
 				F6E96AD120A5689A001E6E18 /* SongListRow.h */,
 				F6E96AD220A5689A001E6E18 /* SongListRow.m */,
+				F64360E320AC539B00A42319 /* TextFieldRow.h */,
+				F64360E420AC539B00A42319 /* TextFieldRow.m */,
+				F61EE65C20AEF65C0029A8F4 /* TestListRow.h */,
+				F61EE65D20AEF65C0029A8F4 /* TestListRow.m */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -107,6 +135,11 @@
 			children = (
 				F66BA57620A2C6210085296D /* XiaMiViewController.h */,
 				F66BA57720A2C6210085296D /* XiaMiViewController.m */,
+				F64360E020AC4E0200A42319 /* SettingViewController.h */,
+				F64360E120AC4E0200A42319 /* SettingViewController.m */,
+				F61EE65F20AEF67A0029A8F4 /* TestListViewController.h */,
+				F61EE66020AEF67A0029A8F4 /* TestListViewController.m */,
+				F61EE66120AEF67A0029A8F4 /* TestListViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -120,6 +153,12 @@
 				F6E96AD420A568B6001E6E18 /* SongListCell.h */,
 				F6E96AD520A568B6001E6E18 /* SongListCell.m */,
 				F6E96AD620A568B6001E6E18 /* SongListCell.xib */,
+				F64360E620AC53B800A42319 /* TextFieldCell.h */,
+				F64360E720AC53B800A42319 /* TextFieldCell.m */,
+				F64360E820AC53B800A42319 /* TextFieldCell.xib */,
+				F61EE66420AEF6B30029A8F4 /* TestListCell.h */,
+				F61EE66520AEF6B30029A8F4 /* TestListCell.m */,
+				F61EE66720AEF6C20029A8F4 /* TestListCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,11 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E96AD820A568B6001E6E18 /* SongListCell.xib in Resources */,
+				F61EE66820AEF6C20029A8F4 /* TestListCell.xib in Resources */,
 				F6C8375520A18D7400123B07 /* LaunchScreen.storyboard in Resources */,
 				F6C8377A20A1C26800123B07 /* XTimeLineCell.xib in Resources */,
 				F6C8375220A18D7400123B07 /* Assets.xcassets in Resources */,
 				F6C8375020A18D7400123B07 /* Main.storyboard in Resources */,
 				F66BA57D20A2C7F20085296D /* ChannelCell.xib in Resources */,
+				F61EE66320AEF67A0029A8F4 /* TestListViewController.xib in Resources */,
+				F64360EA20AC53B800A42319 /* TextFieldCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,19 +314,25 @@
 			files = (
 				F6C8377520A1924F00123B07 /* XTableViewCell.m in Sources */,
 				F6E96AD320A5689A001E6E18 /* SongListRow.m in Sources */,
+				F61EE66620AEF6B30029A8F4 /* TestListCell.m in Sources */,
 				F66BA57820A2C6210085296D /* XiaMiViewController.m in Sources */,
 				F6C8377920A1C26800123B07 /* XTimeLineCell.m in Sources */,
 				F6C8374D20A18D7400123B07 /* ViewController.m in Sources */,
 				F66BA58020A2CF3C0085296D /* ChannelRow.m in Sources */,
+				F61EE66220AEF67A0029A8F4 /* TestListViewController.m in Sources */,
 				F66BA57C20A2C7F20085296D /* ChannelCell.m in Sources */,
 				F6C8376720A191D000123B07 /* XTableViewRow.m in Sources */,
+				F61EE65E20AEF65C0029A8F4 /* TestListRow.m in Sources */,
 				F6C8376120A18EF800123B07 /* XTableViewAssistant.m in Sources */,
+				F64360E520AC539B00A42319 /* TextFieldRow.m in Sources */,
 				F6C8375820A18D7400123B07 /* main.m in Sources */,
 				F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */,
 				F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */,
 				F6F486B620AAF7C000381FC5 /* XTableAction.m in Sources */,
 				F6E96AD720A568B6001E6E18 /* SongListCell.m in Sources */,
+				F64360E920AC53B800A42319 /* TextFieldCell.m in Sources */,
 				F6C8376420A191BF00123B07 /* XTableViewSection.m in Sources */,
+				F64360E220AC4E0200A42319 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
