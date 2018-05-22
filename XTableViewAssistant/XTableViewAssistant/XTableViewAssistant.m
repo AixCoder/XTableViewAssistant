@@ -113,7 +113,7 @@
     XTableViewRow *row = section.rows[indexPath.row];
     
     Class cellClass = [self cellClassForRow:row];
-    NSString *cellIdentifier = @"XTableViewCell";
+    NSString *cellIdentifier = @"XTableViewCeMediall";
     if (self.registedXibs[NSStringFromClass(row.class)]) {
         cellIdentifier= self.registedXibs[NSStringFromClass(row.class)];
     }else if (row.cellIdentifier){
@@ -185,6 +185,26 @@
         [cell xTableViewCellDidSelectedFromViewController:self.viewController];
     }
     
+}
+
+
+#pragma mark errors
+
+- (NSArray *)validationErrors
+{
+    NSMutableArray *errors = [NSMutableArray array];
+    
+    for (XTableViewSection *section in self.sections) {
+        
+        for (XTableViewRow *row in section.rows) {
+            XTableValidatorStatus *status = [row doValidator];
+            if (status) {
+                [errors addObject:status];
+            }
+        }
+    }
+    
+    return errors;
 }
 
 @end

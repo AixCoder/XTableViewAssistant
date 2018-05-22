@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60D96BC20B3DA350066A15A /* XTableValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96BB20B3DA350066A15A /* XTableValidator.m */; };
+		F60D96C220B3DABF0066A15A /* XTableValidatorStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96C120B3DABF0066A15A /* XTableValidatorStatus.m */; };
+		F60D96C520B3E2A80066A15A /* XInputRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96C420B3E2A80066A15A /* XInputRow.m */; };
+		F60D96C920B3F2360066A15A /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96C720B3F2360066A15A /* InputViewController.m */; };
+		F60D96CA20B3F2360066A15A /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60D96C820B3F2360066A15A /* InputViewController.xib */; };
+		F60D96CE20B3F4EB0066A15A /* XInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96CC20B3F4EB0066A15A /* XInputCell.m */; };
+		F60D96CF20B3F4EB0066A15A /* XInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60D96CD20B3F4EB0066A15A /* XInputCell.xib */; };
 		F61EE65E20AEF65C0029A8F4 /* TestListRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F61EE65D20AEF65C0029A8F4 /* TestListRow.m */; };
 		F61EE66220AEF67A0029A8F4 /* TestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61EE66020AEF67A0029A8F4 /* TestListViewController.m */; };
 		F61EE66320AEF67A0029A8F4 /* TestListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61EE66120AEF67A0029A8F4 /* TestListViewController.xib */; };
@@ -40,6 +47,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60D96BA20B3DA350066A15A /* XTableValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTableValidator.h; sourceTree = "<group>"; };
+		F60D96BB20B3DA350066A15A /* XTableValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTableValidator.m; sourceTree = "<group>"; };
+		F60D96BD20B3DA5C0066A15A /* XTableValidatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTableValidatorProtocol.h; sourceTree = "<group>"; };
+		F60D96C020B3DABF0066A15A /* XTableValidatorStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTableValidatorStatus.h; sourceTree = "<group>"; };
+		F60D96C120B3DABF0066A15A /* XTableValidatorStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTableValidatorStatus.m; sourceTree = "<group>"; };
+		F60D96C320B3E2A80066A15A /* XInputRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XInputRow.h; sourceTree = "<group>"; };
+		F60D96C420B3E2A80066A15A /* XInputRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XInputRow.m; sourceTree = "<group>"; };
+		F60D96C620B3F2360066A15A /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		F60D96C720B3F2360066A15A /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		F60D96C820B3F2360066A15A /* InputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
+		F60D96CB20B3F4EB0066A15A /* XInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XInputCell.h; sourceTree = "<group>"; };
+		F60D96CC20B3F4EB0066A15A /* XInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XInputCell.m; sourceTree = "<group>"; };
+		F60D96CD20B3F4EB0066A15A /* XInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XInputCell.xib; sourceTree = "<group>"; };
 		F61EE65C20AEF65C0029A8F4 /* TestListRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListRow.h; sourceTree = "<group>"; };
 		F61EE65D20AEF65C0029A8F4 /* TestListRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListRow.m; sourceTree = "<group>"; };
 		F61EE65F20AEF67A0029A8F4 /* TestListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListViewController.h; sourceTree = "<group>"; };
@@ -105,6 +125,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F60D96B920B3DA0D0066A15A /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				F60D96BA20B3DA350066A15A /* XTableValidator.h */,
+				F60D96BB20B3DA350066A15A /* XTableValidator.m */,
+				F60D96C020B3DABF0066A15A /* XTableValidatorStatus.h */,
+				F60D96C120B3DABF0066A15A /* XTableValidatorStatus.m */,
+				F60D96BD20B3DA5C0066A15A /* XTableValidatorProtocol.h */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 		F66BA57220A2C5E40085296D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +172,9 @@
 				F61EE65F20AEF67A0029A8F4 /* TestListViewController.h */,
 				F61EE66020AEF67A0029A8F4 /* TestListViewController.m */,
 				F61EE66120AEF67A0029A8F4 /* TestListViewController.xib */,
+				F60D96C620B3F2360066A15A /* InputViewController.h */,
+				F60D96C720B3F2360066A15A /* InputViewController.m */,
+				F60D96C820B3F2360066A15A /* InputViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -208,6 +243,7 @@
 				F6C8376620A191D000123B07 /* XTableViewRow.m */,
 				F6F486B420AAF7C000381FC5 /* XTableAction.h */,
 				F6F486B520AAF7C000381FC5 /* XTableAction.m */,
+				F60D96B920B3DA0D0066A15A /* Validation */,
 				F6C8377B20A1C2F900123B07 /* Rows */,
 				F6C8376820A191EF00123B07 /* Cells */,
 			);
@@ -222,6 +258,9 @@
 				F6C8377620A1C26800123B07 /* XTimeLineCell.h */,
 				F6C8377720A1C26800123B07 /* XTimeLineCell.m */,
 				F6C8377820A1C26800123B07 /* XTimeLineCell.xib */,
+				F60D96CB20B3F4EB0066A15A /* XInputCell.h */,
+				F60D96CC20B3F4EB0066A15A /* XInputCell.m */,
+				F60D96CD20B3F4EB0066A15A /* XInputCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -231,6 +270,8 @@
 			children = (
 				F6C8377C20A1C31700123B07 /* XTimeLineRow.h */,
 				F6C8377D20A1C31700123B07 /* XTimeLineRow.m */,
+				F60D96C320B3E2A80066A15A /* XInputRow.h */,
+				F60D96C420B3E2A80066A15A /* XInputRow.m */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -301,7 +342,9 @@
 				F6C8375020A18D7400123B07 /* Main.storyboard in Resources */,
 				F66BA57D20A2C7F20085296D /* ChannelCell.xib in Resources */,
 				F61EE66320AEF67A0029A8F4 /* TestListViewController.xib in Resources */,
+				F60D96CF20B3F4EB0066A15A /* XInputCell.xib in Resources */,
 				F64360EA20AC53B800A42319 /* TextFieldCell.xib in Resources */,
+				F60D96CA20B3F2360066A15A /* InputViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +358,9 @@
 				F6C8377520A1924F00123B07 /* XTableViewCell.m in Sources */,
 				F6E96AD320A5689A001E6E18 /* SongListRow.m in Sources */,
 				F61EE66620AEF6B30029A8F4 /* TestListCell.m in Sources */,
+				F60D96C920B3F2360066A15A /* InputViewController.m in Sources */,
 				F66BA57820A2C6210085296D /* XiaMiViewController.m in Sources */,
+				F60D96C220B3DABF0066A15A /* XTableValidatorStatus.m in Sources */,
 				F6C8377920A1C26800123B07 /* XTimeLineCell.m in Sources */,
 				F6C8374D20A18D7400123B07 /* ViewController.m in Sources */,
 				F66BA58020A2CF3C0085296D /* ChannelRow.m in Sources */,
@@ -325,13 +370,16 @@
 				F61EE65E20AEF65C0029A8F4 /* TestListRow.m in Sources */,
 				F6C8376120A18EF800123B07 /* XTableViewAssistant.m in Sources */,
 				F64360E520AC539B00A42319 /* TextFieldRow.m in Sources */,
+				F60D96C520B3E2A80066A15A /* XInputRow.m in Sources */,
 				F6C8375820A18D7400123B07 /* main.m in Sources */,
+				F60D96CE20B3F4EB0066A15A /* XInputCell.m in Sources */,
 				F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */,
 				F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */,
 				F6F486B620AAF7C000381FC5 /* XTableAction.m in Sources */,
 				F6E96AD720A568B6001E6E18 /* SongListCell.m in Sources */,
 				F64360E920AC53B800A42319 /* TextFieldCell.m in Sources */,
 				F6C8376420A191BF00123B07 /* XTableViewSection.m in Sources */,
+				F60D96BC20B3DA350066A15A /* XTableValidator.m in Sources */,
 				F64360E220AC4E0200A42319 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

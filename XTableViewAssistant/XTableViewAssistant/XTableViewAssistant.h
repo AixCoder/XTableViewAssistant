@@ -17,13 +17,16 @@
 @property (nonatomic,readonly)NSArray <XTableViewSection *>*sections;
 @property (nonatomic,readonly)NSArray *rows;
 
+@property (nonatomic,readonly)NSArray *validationErrors;
+
 @property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,weak) UIViewController *viewController;
 
 - (instancetype)initWithTableView:(UITableView *)table_view fromUIViewController:(UIViewController *)viewController;
 
 - (void)registerRowClass:(NSString *)rowClass forCellClass:(NSString*)cellClass;
-
 - (void)addSection:(XTableViewSection *)section;
+
+
 
 @end

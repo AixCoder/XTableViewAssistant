@@ -11,6 +11,7 @@
 #import "XTimeLineRow.h"
 #import "XTimeLineCell.h"
 #import "TestListViewController.h"
+#import "InputViewController.h"
 
 @interface ViewController ()
 
@@ -49,9 +50,16 @@
     };
     row2.value = @"自定义cell";
     
+    XTableViewRow *row3 = [[XTableViewRow alloc] init];
+    row3.value = @"text field";
+    row3.selectedHandler = ^(id tableViewRow) {
+        InputViewController *inputVC = [[InputViewController alloc] init];
+        [self.navigationController pushViewController:inputVC animated:YES];
+    };
     [_section addRow:row1];
     [_section addRow:_row];
     [_section addRow:row2];
+    [_section addRow:row3];
     [_tableViewAssistant addSection:_section];
 
     
