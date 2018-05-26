@@ -43,10 +43,11 @@
     row1.value = @"设置页面";
     
     XTableViewRow *row2 = [[XTableViewRow alloc] init];
-    row2.selectedHandler = ^(id tableViewRow) {
-        
+
+    row2.selectedHandler = ^(XTableViewRow *tableViewRow) {
         TestListViewController *vc = [[TestListViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+        [tableViewRow deselectRowAnimated:YES];
     };
     row2.value = @"自定义cell";
     

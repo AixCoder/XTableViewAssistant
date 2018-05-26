@@ -8,6 +8,7 @@
 
 #import "XTableViewSection.h"
 #import "XTableViewRow.h"
+#import "XTableViewAssistant.h"
 
 @interface XTableViewSection()
 
@@ -36,7 +37,17 @@
 
 - (void)addRow:(XTableViewRow *)row
 {
+    if ([row isKindOfClass:[XTableViewRow class]]) {
+        row.section = self;
+    }
     [self.tableRows addObject:row];
+}
+
+#pragma mark getter
+
+- (NSUInteger)index
+{
+    return  [self.tableViewAssistant.sections indexOfObject:self];
 }
 
 @end

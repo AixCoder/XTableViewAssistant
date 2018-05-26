@@ -8,6 +8,8 @@
 
 #import "XTableViewRow.h"
 #import "XTableValidatorStatus.h"
+#import "XTableViewSection.h"
+#import "XTableViewAssistant.h"
 
 @interface XTableViewRow()
 
@@ -16,6 +18,8 @@
 @end
 
 @implementation XTableViewRow
+
+#pragma mark init
 
 - (instancetype)init
 {
@@ -26,7 +30,6 @@
     return self;
 }
 
-#pragma mark init
 
 + (instancetype)row
 {
@@ -44,6 +47,17 @@
     return [[self alloc] initWithTitle:title selectionHandler:selectionHandler];
 }
 
+- (instancetype)initWithTitle:(NSString *)title
+{
+    self = [self init];
+    
+    if (!self) {
+        return nil;
+    }
+    _title = title;
+    _selectedHandler = nil;
+    return self;
+}
 
 - (instancetype)initWithTitle:(NSString *)title selectionHandler:(void (^)(XTableViewRow *))selectionHandler
 {
@@ -58,19 +72,7 @@
 }
 
 
-
-- (XTableAction *)action
-{
-    if (!_action) {
-        _action = [[XTableAction alloc] init];
-    }
-    return _action;
-}
-
-- (UIStoryboard *)uiStoryBoard
-{
-    return nil;
-}
+#pragma mark validator
 
 - (void)addValidator:(id<XTableValidatorProtocol>)validator
 {
@@ -133,6 +135,36 @@
     return self.value == nil ||
     [self.value isKindOfClass:[NSNull class]] ||
     [self.value isEqualToString:@""];
+}
+
+#pragma mark Manipulating row
+
+- (void)deselectRowAnimated:(BOOL)animated
+{
+    [self.section.tableViewAssistant.tableView deselectRowAtIndexPath:self.indexPath animated:animated];
+}
+
+#pragma mark getter
+
+- (XTableAction *)action
+{
+    if (!_action) {
+        _action = [[XTableAction alloc] init];
+    }
+    return _action;
+}
+
+- (UIStoryboard *)uiStoryBoard
+{
+    return nil;
+}
+
+- (NSIndexPath *)indexPath
+{
+    NSUInteger row = [self.section.rows indexOfObject:self];
+    NSUInteger section = self.section.index;
+    
+    return  [NSIndexPath indexPathForRow:row inSection:section];
 }
 
 @end

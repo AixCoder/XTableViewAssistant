@@ -11,12 +11,14 @@
 #import "XTableAction.h"
 #import "XTableValidatorProtocol.h"
 
+@class XTableViewSection;
 @class XTableValidatorStatus;
 @class XTableValidator;
 @protocol XTableValidatorProtocol;
 
 @interface XTableViewRow : NSObject
 
+@property (nonatomic,weak)XTableViewSection *section;
 @property (nonatomic,copy)NSString *title;
 @property (nonatomic,copy)NSString *tag;
 @property (nonatomic,assign) BOOL required;
@@ -39,6 +41,9 @@
 - (void)removeValidator:(id <XTableValidatorProtocol>)validator;
 - (XTableValidatorStatus *)doValidator;
 
+- (void)deselectRowAnimated:(BOOL)animated;
+
 - (UIStoryboard *)uiStoryBoard;
+- (NSIndexPath *)indexPath;
 
 @end

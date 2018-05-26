@@ -10,13 +10,17 @@
 
 
 @class XTableViewRow;
+@class XTableViewAssistant;
 
 @interface XTableViewSection : NSObject
 
 @property (nonatomic,readonly)NSArray<XTableViewRow *> *rows;
+@property (nonatomic,weak) XTableViewAssistant *tableViewAssistant;
 
 + (instancetype)section;
 
 - (void)addRow:(XTableViewRow *)row;
+
+- (NSUInteger)index;
 
 @end

@@ -87,6 +87,10 @@
 
 - (void)addSection:(XTableViewSection *)section
 {
+    if ([section isKindOfClass:[XTableViewSection class]]) {
+        section.tableViewAssistant = self;
+    }
+    
     [self.tableSections addObject:section];
 }
 
