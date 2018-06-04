@@ -43,6 +43,13 @@
     [self.tableRows addObject:row];
 }
 
+- (void)removeRow:(XTableViewRow *)row
+{
+    if ([self.tableRows containsObject:row]) {
+        [self.tableRows removeObject:row];
+    }
+}
+
 #pragma mark getter
 
 - (NSUInteger)index

@@ -12,6 +12,7 @@
 #import "XTimeLineCell.h"
 #import "TestListViewController.h"
 #import "InputViewController.h"
+#import "OnlyDeleteViewController.h"
 
 @interface ViewController ()
 
@@ -57,10 +58,18 @@
         InputViewController *inputVC = [[InputViewController alloc] init];
         [self.navigationController pushViewController:inputVC animated:YES];
     };
+    
+    XTableViewRow *row4 = [[XTableViewRow alloc] init];
+    row4.value = @"删除";
+    row4.selectedHandler = ^(XTableViewRow *tableViewRow) {
+        OnlyDeleteViewController *deleteVC = [[OnlyDeleteViewController alloc] init];
+        [self.navigationController pushViewController:deleteVC animated:YES];
+    };
     [_section addRow:row1];
     [_section addRow:_row];
     [_section addRow:row2];
     [_section addRow:row3];
+    [_section addRow:row4];//删除
     [_tableViewAssistant addSection:_section];
 
     

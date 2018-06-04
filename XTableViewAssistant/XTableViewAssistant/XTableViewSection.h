@@ -20,6 +20,7 @@
 + (instancetype)section;
 
 - (void)addRow:(XTableViewRow *)row;
+- (void)removeRow:(XTableViewRow *)row;
 
 - (NSUInteger)index;
 

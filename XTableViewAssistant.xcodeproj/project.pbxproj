@@ -40,6 +40,11 @@
 		F6C8377920A1C26800123B07 /* XTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8377720A1C26800123B07 /* XTimeLineCell.m */; };
 		F6C8377A20A1C26800123B07 /* XTimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C8377820A1C26800123B07 /* XTimeLineCell.xib */; };
 		F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8377D20A1C31700123B07 /* XTimeLineRow.m */; };
+		F6DFC07420C5630E00B23700 /* OnlyDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DFC07220C5630E00B23700 /* OnlyDeleteViewController.m */; };
+		F6DFC07520C5630E00B23700 /* OnlyDeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DFC07320C5630E00B23700 /* OnlyDeleteViewController.xib */; };
+		F6DFC07920C5638D00B23700 /* DeleteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DFC07720C5638D00B23700 /* DeleteTableViewCell.m */; };
+		F6DFC07A20C5638D00B23700 /* DeleteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DFC07820C5638D00B23700 /* DeleteTableViewCell.xib */; };
+		F6DFC07D20C563AB00B23700 /* DeleteRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DFC07C20C563AB00B23700 /* DeleteRow.m */; };
 		F6E96AD320A5689A001E6E18 /* SongListRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96AD220A5689A001E6E18 /* SongListRow.m */; };
 		F6E96AD720A568B6001E6E18 /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96AD520A568B6001E6E18 /* SongListCell.m */; };
 		F6E96AD820A568B6001E6E18 /* SongListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E96AD620A568B6001E6E18 /* SongListCell.xib */; };
@@ -105,6 +110,14 @@
 		F6C8377820A1C26800123B07 /* XTimeLineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XTimeLineCell.xib; sourceTree = "<group>"; };
 		F6C8377C20A1C31700123B07 /* XTimeLineRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTimeLineRow.h; sourceTree = "<group>"; };
 		F6C8377D20A1C31700123B07 /* XTimeLineRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTimeLineRow.m; sourceTree = "<group>"; };
+		F6DFC07120C5630E00B23700 /* OnlyDeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlyDeleteViewController.h; sourceTree = "<group>"; };
+		F6DFC07220C5630E00B23700 /* OnlyDeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyDeleteViewController.m; sourceTree = "<group>"; };
+		F6DFC07320C5630E00B23700 /* OnlyDeleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlyDeleteViewController.xib; sourceTree = "<group>"; };
+		F6DFC07620C5638D00B23700 /* DeleteTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteTableViewCell.h; sourceTree = "<group>"; };
+		F6DFC07720C5638D00B23700 /* DeleteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteTableViewCell.m; sourceTree = "<group>"; };
+		F6DFC07820C5638D00B23700 /* DeleteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteTableViewCell.xib; sourceTree = "<group>"; };
+		F6DFC07B20C563AB00B23700 /* DeleteRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteRow.h; sourceTree = "<group>"; };
+		F6DFC07C20C563AB00B23700 /* DeleteRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteRow.m; sourceTree = "<group>"; };
 		F6E96AD120A5689A001E6E18 /* SongListRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListRow.h; sourceTree = "<group>"; };
 		F6E96AD220A5689A001E6E18 /* SongListRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListRow.m; sourceTree = "<group>"; };
 		F6E96AD420A568B6001E6E18 /* SongListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListCell.h; sourceTree = "<group>"; };
@@ -158,6 +171,8 @@
 				F64360E420AC539B00A42319 /* TextFieldRow.m */,
 				F61EE65C20AEF65C0029A8F4 /* TestListRow.h */,
 				F61EE65D20AEF65C0029A8F4 /* TestListRow.m */,
+				F6DFC07B20C563AB00B23700 /* DeleteRow.h */,
+				F6DFC07C20C563AB00B23700 /* DeleteRow.m */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -175,6 +190,9 @@
 				F60D96C620B3F2360066A15A /* InputViewController.h */,
 				F60D96C720B3F2360066A15A /* InputViewController.m */,
 				F60D96C820B3F2360066A15A /* InputViewController.xib */,
+				F6DFC07120C5630E00B23700 /* OnlyDeleteViewController.h */,
+				F6DFC07220C5630E00B23700 /* OnlyDeleteViewController.m */,
+				F6DFC07320C5630E00B23700 /* OnlyDeleteViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +212,9 @@
 				F61EE66420AEF6B30029A8F4 /* TestListCell.h */,
 				F61EE66520AEF6B30029A8F4 /* TestListCell.m */,
 				F61EE66720AEF6C20029A8F4 /* TestListCell.xib */,
+				F6DFC07620C5638D00B23700 /* DeleteTableViewCell.h */,
+				F6DFC07720C5638D00B23700 /* DeleteTableViewCell.m */,
+				F6DFC07820C5638D00B23700 /* DeleteTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,10 +360,12 @@
 				F6C8375520A18D7400123B07 /* LaunchScreen.storyboard in Resources */,
 				F6C8377A20A1C26800123B07 /* XTimeLineCell.xib in Resources */,
 				F6C8375220A18D7400123B07 /* Assets.xcassets in Resources */,
+				F6DFC07520C5630E00B23700 /* OnlyDeleteViewController.xib in Resources */,
 				F6C8375020A18D7400123B07 /* Main.storyboard in Resources */,
 				F66BA57D20A2C7F20085296D /* ChannelCell.xib in Resources */,
 				F61EE66320AEF67A0029A8F4 /* TestListViewController.xib in Resources */,
 				F60D96CF20B3F4EB0066A15A /* XInputCell.xib in Resources */,
+				F6DFC07A20C5638D00B23700 /* DeleteTableViewCell.xib in Resources */,
 				F64360EA20AC53B800A42319 /* TextFieldCell.xib in Resources */,
 				F60D96CA20B3F2360066A15A /* InputViewController.xib in Resources */,
 			);
@@ -372,9 +395,12 @@
 				F64360E520AC539B00A42319 /* TextFieldRow.m in Sources */,
 				F60D96C520B3E2A80066A15A /* XInputRow.m in Sources */,
 				F6C8375820A18D7400123B07 /* main.m in Sources */,
+				F6DFC07D20C563AB00B23700 /* DeleteRow.m in Sources */,
 				F60D96CE20B3F4EB0066A15A /* XInputCell.m in Sources */,
+				F6DFC07920C5638D00B23700 /* DeleteTableViewCell.m in Sources */,
 				F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */,
 				F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */,
+				F6DFC07420C5630E00B23700 /* OnlyDeleteViewController.m in Sources */,
 				F6F486B620AAF7C000381FC5 /* XTableAction.m in Sources */,
 				F6E96AD720A568B6001E6E18 /* SongListCell.m in Sources */,
 				F64360E920AC53B800A42319 /* TextFieldCell.m in Sources */,

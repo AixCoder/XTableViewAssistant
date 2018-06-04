@@ -144,6 +144,24 @@
     [self.section.tableViewAssistant.tableView deselectRowAtIndexPath:self.indexPath animated:animated];
 }
 
+- (void)deleteRowWithAnimated:(UITableViewRowAnimation)animated
+{
+    NSIndexPath *rowPath = self.indexPath;
+    NSUInteger row = rowPath.row;
+    NSUInteger section = rowPath.section;
+    
+    if (row != NSNotFound && section != NSNotFound) {
+        
+        [self.section removeRow:self];
+        NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:section];
+        
+        //table view delete row
+        [self.section.tableViewAssistant.tableView beginUpdates];
+        [self.section.tableViewAssistant.tableView deleteRowsAtIndexPaths:@[path] withRowAnimation:animated];
+        [self.section.tableViewAssistant.tableView endUpdates];
+    }
+}
+
 #pragma mark getter
 
 - (XTableAction *)action

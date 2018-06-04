@@ -42,6 +42,7 @@
 - (XTableValidatorStatus *)doValidator;
 
 - (void)deselectRowAnimated:(BOOL)animated;
+- (void)deleteRowWithAnimated:(UITableViewRowAnimation)animated;
 
 - (UIStoryboard *)uiStoryBoard;
 - (NSIndexPath *)indexPath;
