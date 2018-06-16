@@ -24,6 +24,8 @@
 @property (nonatomic,assign) BOOL required;
 @property (nonatomic,strong) id value;
 
+@property (assign, readwrite, nonatomic) UITableViewCellSelectionStyle selectionStyle;
+
 @property (nonatomic,strong)XTableAction *action;
 
 @property (nonatomic,copy)NSString *cellIdentifier;

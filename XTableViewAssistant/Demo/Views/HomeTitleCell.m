@@ -1,30 +1,32 @@
 //
-//  XTimeLineCell.m
+//  HomeTitleCell.m
 //  XTableViewAssistant
 //
-//  Created by liuhongnian on 08/05/2018.
+//  Created by liuhongnian on 09/06/2018.
 //  Copyright © 2018 liuhongnian. All rights reserved.
 //
 
-#import "XTimeLineCell.h"
-#import "XTimeLineRow.h"
+#import "HomeTitleCell.h"
+#import "HomeTitleRow.h"
+
+@interface HomeTitleCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *homeTitle;
+@end
 
 
-@implementation XTimeLineCell
+@implementation HomeTitleCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    _homeTitle.text = nil;
 }
 
 - (void)cellWillAppear
 {
     [super cellWillAppear];
-    
-    NSLog(@"%@",self.rowDescription);
-    XTimeLineRow *rowDes = (XTimeLineRow*)self.rowDescription;
-    self.titleLabel.text = rowDes.value;
-    
+    self.homeTitle.text = self.rowDescription.value;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -32,6 +34,5 @@
 
     // Configure the view for the selected state
 }
-
 
 @end

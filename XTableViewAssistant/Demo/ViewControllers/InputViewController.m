@@ -9,8 +9,8 @@
 #import "InputViewController.h"
 #import "XTableViewAssistant.h"
 
-#import "XInputRow.h"
-#import "XInputCell.h"
+#import "XInputTextRow.h"
+#import "XInputTextCell.h"
 #import "XTableValidatorStatus.h"
 
 @interface InputViewController ()
@@ -28,17 +28,30 @@
     // Do any additional setup after loading the view from its nib.
     
     _tableAssistant = [[XTableViewAssistant alloc] initWithTableView:self.tableView fromUIViewController:self];
-    [_tableAssistant registerRowClass:NSStringFromClass([XInputRow class]) forCellClass:NSStringFromClass([XInputCell class])];
+    _tableAssistant[@"XInputTextRow"] = @"XInputTextCell";//register cell
     
     _section = [XTableViewSection section];
-    
-    XInputRow *row = [XInputRow rowWithTitle:@"艺术家"];
+    XInputTextRow *row = [XInputTextRow rowWithTitle:@"电影" value:nil placeholder:@"请输入你喜欢的电影"];
     row.required = YES;
-    [_section addRow:row];
+    row.endEditingHandler = ^(XInputTextRow *textRow) {
+        NSString *name = textRow.value;
+        NSLog(@"电影名字：%@",name);
+    };
     
-    XInputRow *row1 = [XInputRow rowWithTitle:@"爱好"];
+    XInputTextRow *row1 = [XInputTextRow rowWithTitle:@"导演" value:nil placeholder:@"请输入电影的导演"];
+    row1.endEditingHandler = ^(XInputTextRow *textRow) {
+        NSString *obj = textRow.value;
+        NSLog(@"导演：%@",obj);
+    };
     row1.required = YES;
+    
+    XInputTextRow *row2 = [XInputTextRow rowWithTitle:@"年份" value:@"2001" placeholder:@""];
+    row2.endEditingHandler = ^(XInputTextRow *textRow) {
+        NSLog(@"更改年份：%@",textRow.value);
+    };
+    [_section addRow:row];
     [_section addRow:row1];
+    [_section addRow:row2];
     [_tableAssistant addSection:_section];
     
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(saveBtnPressed:)];
@@ -73,6 +86,7 @@
     }else{
         
         NSMutableString *message = [NSMutableString string];
+        
         for (XTableViewRow *row in self.section.rows) {
             [message appendString:[NSString stringWithFormat:@"%@ == %@",row.title,row.value]];
         }

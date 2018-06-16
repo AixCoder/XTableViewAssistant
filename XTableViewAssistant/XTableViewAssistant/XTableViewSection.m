@@ -13,6 +13,7 @@
 @interface XTableViewSection()
 
 @property (nonatomic,strong)NSMutableArray<XTableViewRow *> *tableRows;
+
 @end
 
 @implementation XTableViewSection
@@ -27,6 +28,35 @@
     if (self = [super init]) {
         _tableRows = [NSMutableArray array];
     }
+    return self;
+}
+
+- (instancetype)initWithHeadTitle:(NSString *)headTitle
+{
+    return [self initWithHeadTitle:headTitle footerTitle:nil];
+}
+
+- (instancetype)initWithHeadTitle:(NSString *)headTitle footerTitle:(NSString *)footerTitle
+{
+    if (self = [self init]) {
+        _headTitle = headTitle;
+        _footerTitle = footerTitle;
+    }
+    return self;
+}
+
+- (instancetype)initWithHeadView:(UIView *)headView
+{
+    return [self initWithHeadView:headView footerView:nil];
+}
+
+- (instancetype)initWithHeadView:(UIView *)headView footerView:(UIView *)footerView
+{
+    if (self = [self init]) {
+        _headerView = headView;
+        _footerView = footerView;
+    }
+    
     return self;
 }
 

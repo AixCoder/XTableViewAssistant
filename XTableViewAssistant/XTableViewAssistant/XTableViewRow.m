@@ -26,6 +26,7 @@
     self = [super init];
     if (self) {
         _validators = [NSMutableArray array];
+        _selectionStyle = UITableViewCellSelectionStyleDefault;
     }
     return self;
 }

@@ -11,4 +11,5 @@
 @interface XTimeLineCell : XTableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @end

@@ -1,13 +1,13 @@
 //
-//  XInputRow.h
+//  HomeTitleRow.h
 //  XTableViewAssistant
 //
-//  Created by liuhongnian on 22/05/2018.
+//  Created by liuhongnian on 09/06/2018.
 //  Copyright © 2018 liuhongnian. All rights reserved.
 //
 
 #import "XTableViewRow.h"
 
-@interface XInputRow : XTableViewRow
+@interface HomeTitleRow : XTableViewRow
 
 @end

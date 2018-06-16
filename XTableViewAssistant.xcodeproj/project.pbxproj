@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		F60D96BC20B3DA350066A15A /* XTableValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96BB20B3DA350066A15A /* XTableValidator.m */; };
 		F60D96C220B3DABF0066A15A /* XTableValidatorStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96C120B3DABF0066A15A /* XTableValidatorStatus.m */; };
-		F60D96C520B3E2A80066A15A /* XInputRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96C420B3E2A80066A15A /* XInputRow.m */; };
 		F60D96C920B3F2360066A15A /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96C720B3F2360066A15A /* InputViewController.m */; };
 		F60D96CA20B3F2360066A15A /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60D96C820B3F2360066A15A /* InputViewController.xib */; };
-		F60D96CE20B3F4EB0066A15A /* XInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F60D96CC20B3F4EB0066A15A /* XInputCell.m */; };
-		F60D96CF20B3F4EB0066A15A /* XInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60D96CD20B3F4EB0066A15A /* XInputCell.xib */; };
 		F61EE65E20AEF65C0029A8F4 /* TestListRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F61EE65D20AEF65C0029A8F4 /* TestListRow.m */; };
 		F61EE66220AEF67A0029A8F4 /* TestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61EE66020AEF67A0029A8F4 /* TestListViewController.m */; };
 		F61EE66320AEF67A0029A8F4 /* TestListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F61EE66120AEF67A0029A8F4 /* TestListViewController.xib */; };
@@ -27,6 +24,12 @@
 		F66BA57C20A2C7F20085296D /* ChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BA57A20A2C7F20085296D /* ChannelCell.m */; };
 		F66BA57D20A2C7F20085296D /* ChannelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66BA57B20A2C7F20085296D /* ChannelCell.xib */; };
 		F66BA58020A2CF3C0085296D /* ChannelRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BA57F20A2CF3C0085296D /* ChannelRow.m */; };
+		F67EDC3F20CBEC8000DC9193 /* XInputTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EDC3D20CBEC8000DC9193 /* XInputTextCell.m */; };
+		F67EDC4020CBEC8000DC9193 /* XInputTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67EDC3E20CBEC8000DC9193 /* XInputTextCell.xib */; };
+		F67EDC4320CBECBE00DC9193 /* XInputTextRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EDC4220CBECBE00DC9193 /* XInputTextRow.m */; };
+		F67EDC4620CBFBFB00DC9193 /* HomeTitleRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EDC4520CBFBFB00DC9193 /* HomeTitleRow.m */; };
+		F67EDC4A20CBFC1700DC9193 /* HomeTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F67EDC4820CBFC1700DC9193 /* HomeTitleCell.m */; };
+		F67EDC4B20CBFC1700DC9193 /* HomeTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67EDC4920CBFC1700DC9193 /* HomeTitleCell.xib */; };
 		F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8374920A18D7400123B07 /* AppDelegate.m */; };
 		F6C8374D20A18D7400123B07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8374C20A18D7400123B07 /* ViewController.m */; };
 		F6C8375020A18D7400123B07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C8374E20A18D7400123B07 /* Main.storyboard */; };
@@ -57,14 +60,9 @@
 		F60D96BD20B3DA5C0066A15A /* XTableValidatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTableValidatorProtocol.h; sourceTree = "<group>"; };
 		F60D96C020B3DABF0066A15A /* XTableValidatorStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTableValidatorStatus.h; sourceTree = "<group>"; };
 		F60D96C120B3DABF0066A15A /* XTableValidatorStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTableValidatorStatus.m; sourceTree = "<group>"; };
-		F60D96C320B3E2A80066A15A /* XInputRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XInputRow.h; sourceTree = "<group>"; };
-		F60D96C420B3E2A80066A15A /* XInputRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XInputRow.m; sourceTree = "<group>"; };
 		F60D96C620B3F2360066A15A /* InputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
 		F60D96C720B3F2360066A15A /* InputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 		F60D96C820B3F2360066A15A /* InputViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
-		F60D96CB20B3F4EB0066A15A /* XInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XInputCell.h; sourceTree = "<group>"; };
-		F60D96CC20B3F4EB0066A15A /* XInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XInputCell.m; sourceTree = "<group>"; };
-		F60D96CD20B3F4EB0066A15A /* XInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XInputCell.xib; sourceTree = "<group>"; };
 		F61EE65C20AEF65C0029A8F4 /* TestListRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListRow.h; sourceTree = "<group>"; };
 		F61EE65D20AEF65C0029A8F4 /* TestListRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestListRow.m; sourceTree = "<group>"; };
 		F61EE65F20AEF67A0029A8F4 /* TestListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestListViewController.h; sourceTree = "<group>"; };
@@ -87,6 +85,16 @@
 		F66BA57B20A2C7F20085296D /* ChannelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCell.xib; sourceTree = "<group>"; };
 		F66BA57E20A2CF3C0085296D /* ChannelRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelRow.h; sourceTree = "<group>"; };
 		F66BA57F20A2CF3C0085296D /* ChannelRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelRow.m; sourceTree = "<group>"; };
+		F67EDC3C20CBEC8000DC9193 /* XInputTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XInputTextCell.h; sourceTree = "<group>"; };
+		F67EDC3D20CBEC8000DC9193 /* XInputTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XInputTextCell.m; sourceTree = "<group>"; };
+		F67EDC3E20CBEC8000DC9193 /* XInputTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XInputTextCell.xib; sourceTree = "<group>"; };
+		F67EDC4120CBECBE00DC9193 /* XInputTextRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XInputTextRow.h; sourceTree = "<group>"; };
+		F67EDC4220CBECBE00DC9193 /* XInputTextRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XInputTextRow.m; sourceTree = "<group>"; };
+		F67EDC4420CBFBFB00DC9193 /* HomeTitleRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTitleRow.h; sourceTree = "<group>"; };
+		F67EDC4520CBFBFB00DC9193 /* HomeTitleRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTitleRow.m; sourceTree = "<group>"; };
+		F67EDC4720CBFC1700DC9193 /* HomeTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTitleCell.h; sourceTree = "<group>"; };
+		F67EDC4820CBFC1700DC9193 /* HomeTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTitleCell.m; sourceTree = "<group>"; };
+		F67EDC4920CBFC1700DC9193 /* HomeTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTitleCell.xib; sourceTree = "<group>"; };
 		F6C8374520A18D7400123B07 /* XTableViewAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTableViewAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C8374820A18D7400123B07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6C8374920A18D7400123B07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -173,6 +181,8 @@
 				F61EE65D20AEF65C0029A8F4 /* TestListRow.m */,
 				F6DFC07B20C563AB00B23700 /* DeleteRow.h */,
 				F6DFC07C20C563AB00B23700 /* DeleteRow.m */,
+				F67EDC4420CBFBFB00DC9193 /* HomeTitleRow.h */,
+				F67EDC4520CBFBFB00DC9193 /* HomeTitleRow.m */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -215,6 +225,9 @@
 				F6DFC07620C5638D00B23700 /* DeleteTableViewCell.h */,
 				F6DFC07720C5638D00B23700 /* DeleteTableViewCell.m */,
 				F6DFC07820C5638D00B23700 /* DeleteTableViewCell.xib */,
+				F67EDC4720CBFC1700DC9193 /* HomeTitleCell.h */,
+				F67EDC4820CBFC1700DC9193 /* HomeTitleCell.m */,
+				F67EDC4920CBFC1700DC9193 /* HomeTitleCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,9 +292,9 @@
 				F6C8377620A1C26800123B07 /* XTimeLineCell.h */,
 				F6C8377720A1C26800123B07 /* XTimeLineCell.m */,
 				F6C8377820A1C26800123B07 /* XTimeLineCell.xib */,
-				F60D96CB20B3F4EB0066A15A /* XInputCell.h */,
-				F60D96CC20B3F4EB0066A15A /* XInputCell.m */,
-				F60D96CD20B3F4EB0066A15A /* XInputCell.xib */,
+				F67EDC3C20CBEC8000DC9193 /* XInputTextCell.h */,
+				F67EDC3D20CBEC8000DC9193 /* XInputTextCell.m */,
+				F67EDC3E20CBEC8000DC9193 /* XInputTextCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -291,8 +304,8 @@
 			children = (
 				F6C8377C20A1C31700123B07 /* XTimeLineRow.h */,
 				F6C8377D20A1C31700123B07 /* XTimeLineRow.m */,
-				F60D96C320B3E2A80066A15A /* XInputRow.h */,
-				F60D96C420B3E2A80066A15A /* XInputRow.m */,
+				F67EDC4120CBECBE00DC9193 /* XInputTextRow.h */,
+				F67EDC4220CBECBE00DC9193 /* XInputTextRow.m */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -362,10 +375,11 @@
 				F6C8375220A18D7400123B07 /* Assets.xcassets in Resources */,
 				F6DFC07520C5630E00B23700 /* OnlyDeleteViewController.xib in Resources */,
 				F6C8375020A18D7400123B07 /* Main.storyboard in Resources */,
+				F67EDC4B20CBFC1700DC9193 /* HomeTitleCell.xib in Resources */,
 				F66BA57D20A2C7F20085296D /* ChannelCell.xib in Resources */,
 				F61EE66320AEF67A0029A8F4 /* TestListViewController.xib in Resources */,
-				F60D96CF20B3F4EB0066A15A /* XInputCell.xib in Resources */,
 				F6DFC07A20C5638D00B23700 /* DeleteTableViewCell.xib in Resources */,
+				F67EDC4020CBEC8000DC9193 /* XInputTextCell.xib in Resources */,
 				F64360EA20AC53B800A42319 /* TextFieldCell.xib in Resources */,
 				F60D96CA20B3F2360066A15A /* InputViewController.xib in Resources */,
 			);
@@ -386,19 +400,21 @@
 				F60D96C220B3DABF0066A15A /* XTableValidatorStatus.m in Sources */,
 				F6C8377920A1C26800123B07 /* XTimeLineCell.m in Sources */,
 				F6C8374D20A18D7400123B07 /* ViewController.m in Sources */,
+				F67EDC4620CBFBFB00DC9193 /* HomeTitleRow.m in Sources */,
+				F67EDC4320CBECBE00DC9193 /* XInputTextRow.m in Sources */,
 				F66BA58020A2CF3C0085296D /* ChannelRow.m in Sources */,
 				F61EE66220AEF67A0029A8F4 /* TestListViewController.m in Sources */,
 				F66BA57C20A2C7F20085296D /* ChannelCell.m in Sources */,
 				F6C8376720A191D000123B07 /* XTableViewRow.m in Sources */,
 				F61EE65E20AEF65C0029A8F4 /* TestListRow.m in Sources */,
+				F67EDC3F20CBEC8000DC9193 /* XInputTextCell.m in Sources */,
 				F6C8376120A18EF800123B07 /* XTableViewAssistant.m in Sources */,
 				F64360E520AC539B00A42319 /* TextFieldRow.m in Sources */,
-				F60D96C520B3E2A80066A15A /* XInputRow.m in Sources */,
 				F6C8375820A18D7400123B07 /* main.m in Sources */,
 				F6DFC07D20C563AB00B23700 /* DeleteRow.m in Sources */,
-				F60D96CE20B3F4EB0066A15A /* XInputCell.m in Sources */,
 				F6DFC07920C5638D00B23700 /* DeleteTableViewCell.m in Sources */,
 				F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */,
+				F67EDC4A20CBFC1700DC9193 /* HomeTitleCell.m in Sources */,
 				F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */,
 				F6DFC07420C5630E00B23700 /* OnlyDeleteViewController.m in Sources */,
 				F6F486B620AAF7C000381FC5 /* XTableAction.m in Sources */,

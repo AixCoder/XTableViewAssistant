@@ -10,6 +10,15 @@
 
 @implementation XTimeLineRow
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    return self;
+}
+
 - (UIStoryboard *)uiStoryBoard
 {
     return [UIStoryboard storyboardWithName:@"Main" bundle:nil];
