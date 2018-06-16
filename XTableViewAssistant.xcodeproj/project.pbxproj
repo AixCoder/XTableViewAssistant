@@ -43,6 +43,8 @@
 		F6C8377920A1C26800123B07 /* XTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8377720A1C26800123B07 /* XTimeLineCell.m */; };
 		F6C8377A20A1C26800123B07 /* XTimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C8377820A1C26800123B07 /* XTimeLineCell.xib */; };
 		F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8377D20A1C31700123B07 /* XTimeLineRow.m */; };
+		F6C9F4EF20D5432D00F2516D /* HeaderOrFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C9F4ED20D5432D00F2516D /* HeaderOrFooterViewController.m */; };
+		F6C9F4F020D5432D00F2516D /* HeaderOrFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C9F4EE20D5432D00F2516D /* HeaderOrFooterViewController.xib */; };
 		F6DFC07420C5630E00B23700 /* OnlyDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DFC07220C5630E00B23700 /* OnlyDeleteViewController.m */; };
 		F6DFC07520C5630E00B23700 /* OnlyDeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DFC07320C5630E00B23700 /* OnlyDeleteViewController.xib */; };
 		F6DFC07920C5638D00B23700 /* DeleteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DFC07720C5638D00B23700 /* DeleteTableViewCell.m */; };
@@ -118,6 +120,9 @@
 		F6C8377820A1C26800123B07 /* XTimeLineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XTimeLineCell.xib; sourceTree = "<group>"; };
 		F6C8377C20A1C31700123B07 /* XTimeLineRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTimeLineRow.h; sourceTree = "<group>"; };
 		F6C8377D20A1C31700123B07 /* XTimeLineRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTimeLineRow.m; sourceTree = "<group>"; };
+		F6C9F4EC20D5432D00F2516D /* HeaderOrFooterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderOrFooterViewController.h; sourceTree = "<group>"; };
+		F6C9F4ED20D5432D00F2516D /* HeaderOrFooterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderOrFooterViewController.m; sourceTree = "<group>"; };
+		F6C9F4EE20D5432D00F2516D /* HeaderOrFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderOrFooterViewController.xib; sourceTree = "<group>"; };
 		F6DFC07120C5630E00B23700 /* OnlyDeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlyDeleteViewController.h; sourceTree = "<group>"; };
 		F6DFC07220C5630E00B23700 /* OnlyDeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyDeleteViewController.m; sourceTree = "<group>"; };
 		F6DFC07320C5630E00B23700 /* OnlyDeleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlyDeleteViewController.xib; sourceTree = "<group>"; };
@@ -203,6 +208,9 @@
 				F6DFC07120C5630E00B23700 /* OnlyDeleteViewController.h */,
 				F6DFC07220C5630E00B23700 /* OnlyDeleteViewController.m */,
 				F6DFC07320C5630E00B23700 /* OnlyDeleteViewController.xib */,
+				F6C9F4EC20D5432D00F2516D /* HeaderOrFooterViewController.h */,
+				F6C9F4ED20D5432D00F2516D /* HeaderOrFooterViewController.m */,
+				F6C9F4EE20D5432D00F2516D /* HeaderOrFooterViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -382,6 +390,7 @@
 				F67EDC4020CBEC8000DC9193 /* XInputTextCell.xib in Resources */,
 				F64360EA20AC53B800A42319 /* TextFieldCell.xib in Resources */,
 				F60D96CA20B3F2360066A15A /* InputViewController.xib in Resources */,
+				F6C9F4F020D5432D00F2516D /* HeaderOrFooterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +418,7 @@
 				F61EE65E20AEF65C0029A8F4 /* TestListRow.m in Sources */,
 				F67EDC3F20CBEC8000DC9193 /* XInputTextCell.m in Sources */,
 				F6C8376120A18EF800123B07 /* XTableViewAssistant.m in Sources */,
+				F6C9F4EF20D5432D00F2516D /* HeaderOrFooterViewController.m in Sources */,
 				F64360E520AC539B00A42319 /* TextFieldRow.m in Sources */,
 				F6C8375820A18D7400123B07 /* main.m in Sources */,
 				F6DFC07D20C563AB00B23700 /* DeleteRow.m in Sources */,

@@ -15,6 +15,7 @@
 #import "TestListViewController.h"
 #import "InputViewController.h"
 #import "OnlyDeleteViewController.h"
+#import "HeaderOrFooterViewController.h"
 
 @interface ViewController ()
 
@@ -71,11 +72,19 @@
         OnlyDeleteViewController *deleteVC = [[OnlyDeleteViewController alloc] init];
         [self.navigationController pushViewController:deleteVC animated:YES];
     };
+    
+    HomeTitleRow *row5 = [[HomeTitleRow alloc] init];
+    row5.value = @"自定义headerView";
+    row5.selectedHandler = ^(XTableViewRow *tableViewRow) {
+        HeaderOrFooterViewController *vc = [[HeaderOrFooterViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    };
     [_section addRow:row1];
     [_section addRow:_row];
     [_section addRow:row2];
     [_section addRow:row3];
     [_section addRow:row4];//删除
+    [_section addRow:row5];
     
 }
 

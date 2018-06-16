@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderOrFooterViewController">
+            <connections>
+                <outlet property="footerView" destination="ez9-Ri-xXg" id="kzu-vf-AX1"/>
+                <outlet property="headerView" destination="QHu-k9-ViU" id="nGc-ph-aJQ"/>
+                <outlet property="tableView" destination="ntT-uJ-QjG" id="RSd-Q0-Fsj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ntT-uJ-QjG">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ntT-uJ-QjG" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="62K-2c-1j3"/>
+                <constraint firstItem="ntT-uJ-QjG" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Tg1-f5-cBy"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ntT-uJ-QjG" secondAttribute="trailing" id="fLe-0V-D1d"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="ntT-uJ-QjG" secondAttribute="bottom" id="sWh-yj-8gR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+        <view contentMode="scaleToFill" id="QHu-k9-ViU">
+            <rect key="frame" x="0.0" y="0.0" width="702" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="六月十六日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6S-UL-brw">
+                    <rect key="frame" x="268" y="46" width="167" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="假期里看一本好书，长高一点点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E09-tS-ijH">
+                    <rect key="frame" x="230" y="128" width="243" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="E09-tS-ijH" firstAttribute="top" secondItem="Y6S-UL-brw" secondAttribute="bottom" constant="42" id="Kt0-2d-5vz"/>
+                <constraint firstItem="E09-tS-ijH" firstAttribute="centerX" secondItem="QJG-bk-s9A" secondAttribute="centerX" id="Ncp-ep-XKb"/>
+                <constraint firstItem="Y6S-UL-brw" firstAttribute="top" secondItem="QJG-bk-s9A" secondAttribute="top" constant="46" id="VTv-pE-N4w"/>
+                <constraint firstItem="Y6S-UL-brw" firstAttribute="centerX" secondItem="QJG-bk-s9A" secondAttribute="centerX" id="qPL-hE-Z1X"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="QJG-bk-s9A"/>
+            <point key="canvasLocation" x="687" y="-405"/>
+        </view>
+        <view contentMode="scaleToFill" id="ez9-Ri-xXg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="焦虑的实质就是在浪费时间，它不会改变任何事情，只会搅乱你的脑袋，偷走你的快乐" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df5-zv-46D">
+                    <rect key="frame" x="37" y="23" width="300" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ffh-h6-gYj"/>
+            <point key="canvasLocation" x="654.5" y="374.5"/>
+        </view>
+    </objects>
+</document>
