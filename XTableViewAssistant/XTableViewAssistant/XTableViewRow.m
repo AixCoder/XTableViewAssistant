@@ -125,7 +125,7 @@
         if (vStatus && !vStatus.isValid ) {
             return vStatus;
         }
-        status = vStatus;
+        
     }
     
     return status;

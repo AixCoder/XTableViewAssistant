@@ -11,13 +11,12 @@
 
 #import "XInputTextRow.h"
 #import "XInputTextCell.h"
-#import "XTableValidatorStatus.h"
+#import "XTableRegexValidator.h"
 
 @interface InputViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong)XTableViewAssistant *tableAssistant;
-@property (nonatomic,strong)XTableViewSection *section;
 
 @end
 
@@ -26,33 +25,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
     _tableAssistant = [[XTableViewAssistant alloc] initWithTableView:self.tableView fromUIViewController:self];
     _tableAssistant[@"XInputTextRow"] = @"XInputTextCell";//register cell
     
-    _section = [XTableViewSection section];
-    XInputTextRow *row = [XInputTextRow rowWithTitle:@"电影" value:nil placeholder:@"请输入你喜欢的电影"];
+    //名字
+    XTableViewSection *section0 = [[XTableViewSection alloc] initWithHeadTitle:@"取一个你喜欢的名字吧"];
+    XInputTextRow *row;
+    row = [XInputTextRow rowWithTitle:@"用户名" value:@"" placeholder:@"输入一个名字"];
     row.required = YES;
-    row.endEditingHandler = ^(XInputTextRow *textRow) {
-        NSString *name = textRow.value;
-        NSLog(@"电影名字：%@",name);
-    };
+    [section0 addRow:row];
     
-    XInputTextRow *row1 = [XInputTextRow rowWithTitle:@"导演" value:nil placeholder:@"请输入电影的导演"];
-    row1.endEditingHandler = ^(XInputTextRow *textRow) {
-        NSString *obj = textRow.value;
-        NSLog(@"导演：%@",obj);
-    };
-    row1.required = YES;
+    //邮箱
+    XTableViewSection *section1 = [[XTableViewSection alloc] initWithHeadTitle:@"真实的邮箱"];
+    row = [XInputTextRow rowWithTitle:@"邮箱" value:nil placeholder:@"你常用的邮箱"];
+    row.required = YES;
+    [row addValidator:[XTableRegexValidator emailValidator]];
+    [section1 addRow:row];
     
-    XInputTextRow *row2 = [XInputTextRow rowWithTitle:@"年份" value:@"2001" placeholder:@""];
-    row2.endEditingHandler = ^(XInputTextRow *textRow) {
-        NSLog(@"更改年份：%@",textRow.value);
-    };
-    [_section addRow:row];
-    [_section addRow:row1];
-    [_section addRow:row2];
-    [_tableAssistant addSection:_section];
+    //密码
+    XTableViewSection *section2 = [[XTableViewSection alloc] initWithHeadTitle:@"设置你的密码" footerTitle:@"密码的长度在6-12位"];
+    row = [XInputTextRow rowWithTitle:@"密码" value:nil placeholder:@"必填"];
+    row.required = YES;
+    [row addValidator: [[XTableRegexValidator alloc] initWithRemindMsg:@"密码长度不能少于6位，不能超过32位" regex:@"^(?=.*[A-Za-z]).{6,32}$"]];
+    [section2 addRow:row];
+    
+    //附加项目
+    XTableViewSection *section3 = [[XTableViewSection alloc] initWithHeadTitle:@"附加项"];
+    row = [XInputTextRow rowWithTitle:@"喜欢的电影" value:nil placeholder:@"电影名称"];
+    [section3 addRow:row];
+
+    row = [XInputTextRow rowWithTitle:@"喜欢的作家" value:nil placeholder:@"骚年，你喜欢哪位作家"];
+    [section3 addRow:row];
+    row = [XInputTextRow rowWithTitle:@"喜欢的音乐家" value:nil placeholder:@"喜欢哪位音乐家呢"];
+    [section3 addRow:row];
+    
+    [_tableAssistant addSection:section0];
+    [_tableAssistant addSection:section1];
+    [_tableAssistant addSection:section2];
+    [_tableAssistant addSection:section3];
     
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(saveBtnPressed:)];
     self.navigationItem.rightBarButtonItem = item;
@@ -87,9 +97,15 @@
         
         NSMutableString *message = [NSMutableString string];
         
-        for (XTableViewRow *row in self.section.rows) {
-            [message appendString:[NSString stringWithFormat:@"%@ == %@",row.title,row.value]];
-        }
+        [self.tableAssistant.sections enumerateObjectsUsingBlock:^(XTableViewSection * _Nonnull section, NSUInteger idx, BOOL * _Nonnull stop) {
+            
+            [section.rows enumerateObjectsUsingBlock:^(XTableViewRow * _Nonnull row, NSUInteger idx, BOOL * _Nonnull stop) {
+                
+                [message appendString:[NSString stringWithFormat:@"%@ = %@\n",row.title,row.value]];
+
+            }];
+        }];
+
         UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:@"保存成功" message:message preferredStyle:UIAlertControllerStyleAlert];
         [alertCtrl addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:NULL]];
         [self presentViewController:alertCtrl animated:YES completion:NULL];

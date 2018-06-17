@@ -23,6 +23,7 @@
     // Initialization code
     self.titleLabel.text = nil;
     self.inputField.text = nil;
+    self.inputField.delegate = self;
 }
 
 - (void)cellWillAppear
@@ -46,6 +47,10 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     XInputTextRow *row = (XInputTextRow *)self.rowDescription;
+    //判断字符串是不是空，暂时用length属性判断，其实这样并不严禁
+    if (textField.text.length > 0) {
+        row.value = textField.text;
+    }
     if (row.endEditingHandler) {
         row.endEditingHandler(row);
     }

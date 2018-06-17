@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XTableViewAssistant/XTableViewAssistant/XTableViewSection.m"
-            timestampString = "550848247.682596"
+            filePath = "XTableViewAssistant/XTableViewAssistant/XTableViewRow.m"
+            timestampString = "550910191.119982"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-initWithHeadTitle:footerTitle:"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "-doValidator"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

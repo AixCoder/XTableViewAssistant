@@ -45,6 +45,7 @@
 		F6C8377E20A1C31700123B07 /* XTimeLineRow.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8377D20A1C31700123B07 /* XTimeLineRow.m */; };
 		F6C9F4EF20D5432D00F2516D /* HeaderOrFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C9F4ED20D5432D00F2516D /* HeaderOrFooterViewController.m */; };
 		F6C9F4F020D5432D00F2516D /* HeaderOrFooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C9F4EE20D5432D00F2516D /* HeaderOrFooterViewController.xib */; };
+		F6CABFEA20D6242700961FE0 /* XTableRegexValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CABFE920D6242700961FE0 /* XTableRegexValidator.m */; };
 		F6DFC07420C5630E00B23700 /* OnlyDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DFC07220C5630E00B23700 /* OnlyDeleteViewController.m */; };
 		F6DFC07520C5630E00B23700 /* OnlyDeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DFC07320C5630E00B23700 /* OnlyDeleteViewController.xib */; };
 		F6DFC07920C5638D00B23700 /* DeleteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DFC07720C5638D00B23700 /* DeleteTableViewCell.m */; };
@@ -123,6 +124,8 @@
 		F6C9F4EC20D5432D00F2516D /* HeaderOrFooterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderOrFooterViewController.h; sourceTree = "<group>"; };
 		F6C9F4ED20D5432D00F2516D /* HeaderOrFooterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderOrFooterViewController.m; sourceTree = "<group>"; };
 		F6C9F4EE20D5432D00F2516D /* HeaderOrFooterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderOrFooterViewController.xib; sourceTree = "<group>"; };
+		F6CABFE820D6242700961FE0 /* XTableRegexValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTableRegexValidator.h; sourceTree = "<group>"; };
+		F6CABFE920D6242700961FE0 /* XTableRegexValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTableRegexValidator.m; sourceTree = "<group>"; };
 		F6DFC07120C5630E00B23700 /* OnlyDeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlyDeleteViewController.h; sourceTree = "<group>"; };
 		F6DFC07220C5630E00B23700 /* OnlyDeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyDeleteViewController.m; sourceTree = "<group>"; };
 		F6DFC07320C5630E00B23700 /* OnlyDeleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlyDeleteViewController.xib; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 			children = (
 				F60D96BA20B3DA350066A15A /* XTableValidator.h */,
 				F60D96BB20B3DA350066A15A /* XTableValidator.m */,
+				F6CABFE820D6242700961FE0 /* XTableRegexValidator.h */,
+				F6CABFE920D6242700961FE0 /* XTableRegexValidator.m */,
 				F60D96C020B3DABF0066A15A /* XTableValidatorStatus.h */,
 				F60D96C120B3DABF0066A15A /* XTableValidatorStatus.m */,
 				F60D96BD20B3DA5C0066A15A /* XTableValidatorProtocol.h */,
@@ -421,6 +426,7 @@
 				F6C9F4EF20D5432D00F2516D /* HeaderOrFooterViewController.m in Sources */,
 				F64360E520AC539B00A42319 /* TextFieldRow.m in Sources */,
 				F6C8375820A18D7400123B07 /* main.m in Sources */,
+				F6CABFEA20D6242700961FE0 /* XTableRegexValidator.m in Sources */,
 				F6DFC07D20C563AB00B23700 /* DeleteRow.m in Sources */,
 				F6DFC07920C5638D00B23700 /* DeleteTableViewCell.m in Sources */,
 				F6C8374A20A18D7400123B07 /* AppDelegate.m in Sources */,
