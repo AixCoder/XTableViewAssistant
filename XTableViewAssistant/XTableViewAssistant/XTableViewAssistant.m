@@ -124,6 +124,22 @@
     [self.tableSections addObject:section];
 }
 
+- (Class)classOfCellAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section < self.sections.count) {
+        XTableViewSection *section = self.sections[indexPath.section];
+        if (indexPath.row < section.rows.count) {
+            
+            XTableViewRow *row = section.rows[indexPath.row];
+            NSString *key = NSStringFromClass([row class]);
+            Class cellClass = self.registedCellClass[key];
+            return cellClass;
+        }
+    }
+    NSLog(@"cell indexPath越界无效");
+    return nil;
+}
+
 #pragma mark getter
 
 - (NSArray<XTableViewSection *> *)sections
@@ -173,7 +189,7 @@
         cell.tableViewAssistant = self;
         cell.rowDescription = row;
         cell.parentTableView = _tableView;
-        
+        cell.selectionStyle = row.selectionStyle;
         [cell cellDidLoad];
     };
     
@@ -259,13 +275,23 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //制定了高度就使用
-    return UITableViewAutomaticDimension;
+    //手动计算高度
+    Class cellClass = [self classOfCellAtIndexPath:indexPath];
+    XTableViewSection *section = self.sections[indexPath.section];
+    XTableViewRow *row = section.rows[indexPath.row];
+    
+    CGFloat heightForRow = [cellClass cellHeightForRow:row tableViewAssistant:self];
+    if (heightForRow > 0) {
+        return heightForRow;
+    }else if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")){
+        return UITableViewAutomaticDimension;
+    }
+    
+    return 44.;//默认高度
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //制定了高度就使用
     
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
         return self.tableView.estimatedRowHeight;

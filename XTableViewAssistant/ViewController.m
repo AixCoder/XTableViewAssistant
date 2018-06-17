@@ -16,6 +16,7 @@
 #import "InputViewController.h"
 #import "OnlyDeleteViewController.h"
 #import "HeaderOrFooterViewController.h"
+#import "RowTypesViewController.h"
 
 @interface ViewController ()
 
@@ -79,12 +80,20 @@
         HeaderOrFooterViewController *vc = [[HeaderOrFooterViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     };
+    
+    HomeTitleRow *row6 = [[HomeTitleRow alloc] init];
+    row6.value = @"多姿多彩的Cell";
+    row6.selectedHandler = ^(XTableViewRow *tableViewRow) {
+        [self.navigationController pushViewController:[[RowTypesViewController alloc] init] animated:YES];
+    };
     [_section addRow:row1];
     [_section addRow:_row];
     [_section addRow:row2];
     [_section addRow:row3];
     [_section addRow:row4];//删除
     [_section addRow:row5];
+    [_section addRow:row6];
+    
     
 }
 

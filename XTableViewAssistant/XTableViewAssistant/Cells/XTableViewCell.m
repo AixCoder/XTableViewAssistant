@@ -18,6 +18,11 @@
 
 @implementation XTableViewCell
 
++ (CGFloat)cellHeightForRow:(XTableViewRow *)row tableViewAssistant:(XTableViewAssistant *)tableViewAssistant
+{
+    return row.rowHeight > 0 ? row.rowHeight : 0;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

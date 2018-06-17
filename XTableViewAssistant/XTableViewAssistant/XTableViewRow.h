@@ -24,6 +24,8 @@
 @property (nonatomic,assign) BOOL required;
 @property (nonatomic,strong) id value;
 
+@property (nonatomic,assign)CGFloat rowHeight;
+
 @property (assign, readwrite, nonatomic) UITableViewCellSelectionStyle selectionStyle;
 
 @property (nonatomic,strong)XTableAction *action;
@@ -48,5 +50,7 @@
 
 - (UIStoryboard *)uiStoryBoard;
 - (NSIndexPath *)indexPath;
+
+
 
 @end

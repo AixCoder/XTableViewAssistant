@@ -46,7 +46,7 @@
     XTableViewSection *section2 = [[XTableViewSection alloc] initWithHeadTitle:@"设置你的密码" footerTitle:@"密码的长度在6-12位"];
     row = [XInputTextRow rowWithTitle:@"密码" value:nil placeholder:@"必填"];
     row.required = YES;
-    [row addValidator: [[XTableRegexValidator alloc] initWithRemindMsg:@"密码长度不能少于6位，不能超过32位" regex:@"^(?=.*[A-Za-z]).{6,32}$"]];
+    [row addValidator: [[XTableRegexValidator alloc] initWithRemindMsg:@"密码长度不能少于6位，不能超过12位" regex:@"^(?=.*[A-Za-z]).{6,12}$"]];
     [section2 addRow:row];
     
     //附加项目

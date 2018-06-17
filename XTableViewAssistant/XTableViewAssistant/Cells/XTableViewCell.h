@@ -30,5 +30,9 @@
 - (void)cellDidLoad;
 - (void)cellWillAppear;
 
++ (CGFloat)cellHeightForRow:(XTableViewRow *)row
+         tableViewAssistant:(XTableViewAssistant *)tableViewAssistant;
+
+
 
 @end

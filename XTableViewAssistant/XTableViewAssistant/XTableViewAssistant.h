@@ -15,7 +15,6 @@
 
 @end
 
-
 @interface XTableViewAssistant : NSObject
 
 @property (nonatomic,readonly)NSArray <XTableViewSection *> *sections;
