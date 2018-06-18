@@ -47,6 +47,7 @@
 
 - (void)deselectRowAnimated:(BOOL)animated;
 - (void)deleteRowWithAnimated:(UITableViewRowAnimation)animated;
+- (void)reloadRowWithAnimated:(UITableViewRowAnimation)animated;
 
 - (UIStoryboard *)uiStoryBoard;
 - (NSIndexPath *)indexPath;

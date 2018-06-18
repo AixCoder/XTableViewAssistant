@@ -50,6 +50,9 @@
                           @"portrait":[UIImage imageNamed:@"portrait_logo"]
                           };
     Type3Row *row3 = [[Type3Row alloc] initWithContent:dic];
+    row3.selectedHandler = ^(XTableViewRow *tableViewRow) {
+
+    };
     
     [_tableViewAssistant addSection:_section];
     [_section addRow:row1];

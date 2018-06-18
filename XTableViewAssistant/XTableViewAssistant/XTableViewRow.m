@@ -163,6 +163,24 @@
     }
 }
 
+- (void)reloadRowWithAnimated:(UITableViewRowAnimation)animated
+{
+    NSIndexPath *indexPath = self.indexPath;
+    NSInteger section = indexPath.section;
+    NSInteger row = indexPath.row;
+    if (section != NSNotFound && row != NSNotFound) {
+        
+        UITableView *tableView = self.section.tableViewAssistant.tableView;
+        
+        [tableView beginUpdates];
+        [tableView reloadRowsAtIndexPaths:@[indexPath]
+                         withRowAnimation:animated];
+        [tableView endUpdates];
+    }else{
+        NSLog(@"重新加载Row失败");
+    }
+}
+
 #pragma mark getter
 
 - (XTableAction *)action
