@@ -111,7 +111,6 @@
 
 - (Class)cellClassForRow:(XTableViewRow*)row
 {
-    
     return self.registedCellClass[NSStringFromClass(row.class)];
 }
 
@@ -169,6 +168,7 @@
     XTableViewRow *row = section.rows[indexPath.row];
     
     Class cellClass = [self cellClassForRow:row];
+    NSAssert(cellClass, @"table view 必须register cell,参考调用registerRowClass forCellClass API");
     NSString *cellIdentifier;
     if (self.registedXibs[NSStringFromClass(row.class)]) {
         cellIdentifier= self.registedXibs[NSStringFromClass(row.class)];
@@ -177,8 +177,9 @@
     }else{
         cellIdentifier = NSStringFromClass(row.class);
     }
-
-    NSAssert(cellIdentifier, @"table view 必须register cell");
+    
+    NSAssert(cellIdentifier, @"cell 没有可用标识符");
+    
     XTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell) {
         NSAssert([cell isKindOfClass:[XTableViewCell class]], @"cell 必须是XtableViewCell的子类");
@@ -187,7 +188,6 @@
     void (^configurationCell)(XTableViewCell *cell) = ^(XTableViewCell *cell) {
         
         cell.tableViewAssistant = self;
-        cell.rowDescription = row;
         cell.parentTableView = _tableView;
         cell.selectionStyle = row.selectionStyle;
         [cell cellDidLoad];
@@ -201,8 +201,10 @@
         configurationCell(cell);
     }
     
+    cell.rowDescription = row;
+
     [cell cellWillAppear];
-    
+
     return cell;
     
 }
