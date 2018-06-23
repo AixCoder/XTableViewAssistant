@@ -73,11 +73,35 @@
     [self.tableRows addObject:row];
 }
 
+- (void)insertRow:(XTableViewRow *)row toIndex:(NSUInteger)index animated:(UITableViewRowAnimation)rowAnimation
+{
+    NSInteger allRows = self.rows.count;
+    if (index <= allRows) {
+        
+        [self.tableRows insertObject:row atIndex:index];
+        row.section = self;
+        UITableView *tableView = self.tableViewAssistant.tableView;
+        [tableView beginUpdates];
+        NSInteger section = self.index;
+        NSInteger rowPath = index;
+        [tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:rowPath inSection:section]] withRowAnimation:rowAnimation];
+        [tableView endUpdates];
+    }else{
+        NSLog(@"add row index越界%ld ",(long)index);
+    }
+    
+}
+
 - (void)removeRow:(XTableViewRow *)row
 {
     if ([self.tableRows containsObject:row]) {
         [self.tableRows removeObject:row];
     }
+}
+
+- (void)removeAllRows
+{
+    [self.tableRows removeAllObjects];
 }
 
 #pragma mark getter

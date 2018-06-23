@@ -36,6 +36,7 @@
 - (void)registerRowClass:(NSString *)rowClass forCellClass:(NSString*)cellClass;
 
 - (void)addSection:(XTableViewSection *)section;
-
+- (void)removeSection:(XTableViewSection *)section;
+- (void)removeAllSections;
 
 @end

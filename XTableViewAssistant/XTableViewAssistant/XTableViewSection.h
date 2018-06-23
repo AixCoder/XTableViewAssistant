@@ -38,7 +38,11 @@
 
 
 - (void)addRow:(XTableViewRow *)row;
+- (void)insertRow:(XTableViewRow *)row
+          toIndex:(NSUInteger)index
+         animated:(UITableViewRowAnimation )rowAnimation;
 - (void)removeRow:(XTableViewRow *)row;
+- (void)removeAllRows;
 
 - (NSUInteger)index;
 

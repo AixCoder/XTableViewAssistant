@@ -123,6 +123,18 @@
     [self.tableSections addObject:section];
 }
 
+- (void)removeSection:(XTableViewSection *)section
+{
+    if ([self.tableSections containsObject:section]) {
+        [self.tableSections removeObject:section];
+    }
+}
+
+- (void)removeAllSections
+{
+    [self.tableSections removeAllObjects];
+}
+
 - (Class)classOfCellAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section < self.sections.count) {

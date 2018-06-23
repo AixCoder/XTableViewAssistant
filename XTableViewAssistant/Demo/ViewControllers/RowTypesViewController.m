@@ -28,6 +28,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self loadTableView];
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"插入" style:UIBarButtonItemStylePlain target:self action:@selector(reloadTableView)];
+    self.navigationItem.rightBarButtonItem = rightItem;
 }
 
 - (void)loadTableView
@@ -59,6 +62,15 @@
     [_section addRow:row2];
     [_section addRow:row3];
     
+}
+
+- (void)reloadTableView
+{
+
+    Type1Row *row = [[Type1Row alloc] init];
+    row.rowHeight = 80;
+    
+    [_section insertRow:row toIndex:_section.rows.count -1 animated:UITableViewRowAnimationBottom];
 }
 
 - (void)didReceiveMemoryWarning {
