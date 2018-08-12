@@ -13,7 +13,7 @@
 #import "Type3Cell.h"
 #import "XTableViewAssistant.h"
 
-@interface RowTypesViewController ()
+@interface RowTypesViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -87,5 +87,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+
 
 @end
